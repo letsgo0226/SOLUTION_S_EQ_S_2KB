@@ -3,15 +3,17 @@
 **Repository:** https://github.com/letsgo0226/SOLUTION_S_EQ_S_2KB
 
 ## Files
-- `solution_s_eq_s_2KB.sh` — Single-line one-liner. The solver computes the E257 Gödel number of its own program body and satisfies solution(s) = s.
-- `solution_tm_prototype_2KB.sh` — The same solver realized as a small Turing-machine prototype that reaches a fixed-point configuration.
-- `PROOF_self_encoding.txt` — Formal proof of the self-referential closure under pure E257.
-- `PROOF_tm_prototype.txt` — Formal statement of the TM prototype.
+- `solution_s_eq_s_2KB.sh` — Self-encoding one-liner satisfying solution(s) = s (E257 of its own body).
+- `solution_tm_prototype_2KB.sh` — Small fixed TM prototype of the solver.
+- `solution_utm_2KB.sh` — Universal TM prototype: interprets an arbitrary bounded TM description and embeds the result inside the fixed point solution(s) = s.
+- `PROOF_self_encoding.txt`, `PROOF_tm_prototype.txt`, `PROOF_utm.txt` — Formal statements.
 
 ## Usage
 ```bash
 sh solution_s_eq_s_2KB.sh
-sh solution_tm_prototype_2KB.sh
+sh solution_utm_2KB.sh
+# or supply a machine:
+sh solution_utm_2KB.sh '{"rules":[[0,1,1,1,1]],"halt":1,"tape":[1],"limit":8}'
 ```
 
 ## Notes
