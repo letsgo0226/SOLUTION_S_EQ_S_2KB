@@ -7,14 +7,15 @@
 - `solution_tm_prototype_2KB.sh` — Small classical TM prototype.
 - `solution_utm_2KB.sh` — Universal classical TM prototype.
 - `solution_qtm_2KB.sh` — Quantum TM prototype (superposition).
-- `solution_qtm_entangled_2KB.sh` — Quantum TM with formal entanglement (correlated amplitude pairs).
-- Proofs: `PROOF_self_encoding.txt`, `PROOF_tm_prototype.txt`, `PROOF_utm.txt`, `PROOF_qtm.txt`, `PROOF_entanglement.txt`.
+- `solution_qtm_entangled_2KB.sh` — Quantum TM with formal entanglement.
+- `solution_qcomputer_2KB.sh` — Quantum computer prototype (Hadamard + CNOT gate model).
+- Proofs: `PROOF_self_encoding.txt`, `PROOF_tm_prototype.txt`, `PROOF_utm.txt`, `PROOF_qtm.txt`, `PROOF_entanglement.txt`, `PROOF_qcomputer.txt`.
 
 ## Usage
 ```bash
-sh solution_qtm_entangled_2KB.sh
-# or with a machine description:
-sh solution_qtm_entangled_2KB.sh '{"rules":[[0,1,1,1,1],[0,1,0,0,-1]],"halt":1,"tape":[1],"limit":4}'
+sh solution_qcomputer_2KB.sh
+# or with a circuit:
+sh solution_qcomputer_2KB.sh '[["H",[0]],["CNOT",[0,1]]]'
 ```
 
 ## Notes

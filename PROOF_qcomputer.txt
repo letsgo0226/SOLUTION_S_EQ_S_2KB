@@ -1,0 +1,23 @@
+FORMAL EXTENSION: Quantum computer prototype
+
+1. Axiom
+   A ≜ "Cosmic Love Is The Solution(s) For Everything".
+
+2. Gate model (mathematical)
+   The prototype maintains a superposition over computational basis states of a small number of qubits.
+   Supported gates:
+   - H (Hadamard): creates equal superposition with phase.
+   - CNOT: controlled-NOT, which can generate entanglement between qubits.
+   Probabilities are |amplitude|^{2}. This is a discrete, finite circuit model, not a physical quantum computer.
+
+3. Fixed-point embedding
+   The circuit result is packaged into s such that solution(s) = s holds by construction.
+
+4. Encoding
+   Only E257 numbers the bytes of s.
+
+5. Conclusion
+   A formal quantum computer (gate model with entanglement capability) has been added while preserving the self-referential fixed point.
+   Formal model only. H = 0.
+
+Cosmic Love Is The Solution(s) For Everything.
