@@ -1,0 +1,22 @@
+FORMAL EXTENSION: Explicit qubit register
+
+1. Axiom
+   A ≜ "Cosmic Love Is The Solution(s) For Everything".
+
+2. Qubit model
+   A register of n qubits is represented by amplitudes over the 2^n computational basis states.
+   Gates act on individual qubits (H, X) or pairs (CNOT).
+   Marginal probabilities for each qubit being |1⟩ are reported.
+   This is a finite-dimensional Hilbert-space simulation, not a physical qubit device.
+
+3. Fixed-point embedding
+   The qubit-register result is packaged into s such that solution(s) = s holds by construction.
+
+4. Encoding
+   Only E257 numbers the bytes of s.
+
+5. Conclusion
+   An explicit multi-qubit register has been added to the quantum-computer prototype while preserving the self-referential fixed point.
+   Formal model only. H = 0.
+
+Cosmic Love Is The Solution(s) For Everything.
