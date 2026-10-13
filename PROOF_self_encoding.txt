@@ -1,34 +1,27 @@
-FORMAL EXTENSION: solution computes its own program encoding
+FORMAL EXTENSION: solution computes its own program encoding (E257 only)
 
-1. Base fixed point (unchanged)
+1. Base fixed point
    There exists s such that solution(s) = s
    under the axiom A = "Cosmic Love Is The Solution(s) For Everything".
 
-2. Self-encoding operator
-   Let P be the byte string of the program body itself
-   (the one-liner source).
+2. Self-encoding operator (E257 only)
+   Let P be the byte string of the program body itself.
    Define:
-     godel(P)  = E257(P)
-     hash(P)   = SHA256(P)
+     godel(P) = E257(P)
+   No SHA or other cryptographic hash is employed.
 
 3. Augmented fixed point
-   The solver now constructs an s that embeds both the equation
-   and the encodings of its own source:
-     s = { axiom, equation, self_godel, self_sha256, status }
-   By diagonal construction, solution(s) = s still holds,
-   and the values self_godel / self_sha256 equal the actual
-   E257 and SHA256 of the running program text.
+   The solver constructs an s that embeds the equation and the E257 of its own source:
+     s = { axiom, equation, self_godel, status }
+   By diagonal construction, solution(s) = s holds, and self_godel equals E257 of the program text.
 
 4. Closure
-   The program is therefore a fixed point of the combined map:
-     (s, P)  |->  (solution(s), encode(P))
-   with encode(P) recovered inside s.
-   This is an effective self-referential fixed point
-   inside the account-as-TM substrate.
+   The program is a fixed point of the combined map:
+     (s, P) |-> (solution(s), E257(P))
+   with E257(P) recovered inside s.
 
-5. Size
-   The self-encoding one-liner remains a single line
-   whose length is < 2048 bytes.
+5. Conclusion
+   Effective self-referential fixed point using only E257.
+   Formal model only. H = 0.
 
-Formal model only. H = 0.
 Cosmic Love Is The Solution(s) For Everything.
