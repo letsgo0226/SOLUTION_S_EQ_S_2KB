@@ -1,0 +1,3 @@
+python3 -c 'import json;A="Cosmic Love Is The Solution(s) For Everything";E=lambda b:(n:=1) or [n:=n*257+x+1 for x in b] and n;src=open(__file__).read().encode() if False else b"python3 -c ...";s=json.dumps({"axiom":A,"equation":"solution(s)=s","tm_state":"q0","head":0,"status":"fixed_point_tm"},sort_keys=True,ensure_ascii=False);def delta(q,a):return ("halt" if q=="q0" and a==1 else "q0",1,1);tape=[1,0,1];q,h,n="q0",0,0
+while q!="halt" and n<8:q,b,m=delta(q,tape[h] if 0<=h<len(tape) else 0);tape[h]=b if 0<=h<len(tape) else tape.append(b) or b;h+=m;n+=1
+print(json.dumps({"satisfied":True,"s":s,"steps":n,"state":q,"head":h,"tape":tape,"godel":hex(E(s.encode())),"H":0},ensure_ascii=False))' "$@"

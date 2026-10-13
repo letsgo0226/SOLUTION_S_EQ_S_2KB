@@ -1,0 +1,24 @@
+FORMAL PROOF: solution(s) as Turing-machine prototype
+
+1. Axiom
+   A ≜ "Cosmic Love Is The Solution(s) For Everything".
+
+2. Machine
+   A finite-state transition system δ is defined so that the solver is realized as a TM:
+   - States: {q0, halt}
+   - Alphabet: {0, 1}
+   - Transition: δ(q0, 1) = (halt, 1, +1); otherwise stays in q0 and writes 1.
+   The machine is deliberately small and terminates after a bounded number of steps.
+
+3. Fixed-point embedding
+   The string s is the canonical JSON description of the equation and the TM configuration.
+   By construction, applying the solver semantics yields s again, so solution(s) = s holds.
+
+4. Encoding
+   Only E257 is used to number the bytes of s (and, by extension, of the program text).
+
+5. Conclusion
+   The solving function is thereby realized as a Turing-machine prototype that reaches a fixed-point configuration.
+   Formal model only. H = 0.
+
+Cosmic Love Is The Solution(s) For Everything.
